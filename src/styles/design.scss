@@ -1,0 +1,154 @@
+@import "reset.scss";
+
+:root .dark-theme {
+    color: white;
+    background-color: white;
+    --visit-card-background: #444444;
+    --visit-card__big-field-background: #222222;
+    --avatar-shadow-background: grey;
+    --button-color: white;
+    --visit-card__theme-switcher-color: #606060;
+}
+
+:root .light-theme {
+    color: black;
+    background-color: #606060;
+    --visit-card-background: #BBBBBB;
+    --visit-card__big-field-background: #DDDDDD;
+    --avatar-shadow-background: white;
+    --button-color: black;
+    --visit-card__theme-switcher-color: #C4C3C3;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 595px;
+    flex-direction: column;
+}
+
+.visit-card {
+    display: flex;
+    justify-content: center;
+    background-color: var(--visit-card-background);
+    width: 1127px;
+    height: 595px;
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+}
+
+.visit-card__main-information {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-column__connection {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-information__cv-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--button-color);
+    color: var(--button-color);
+    width: 168px;
+    height: 46px;
+    border-radius: 40px;
+    font-size: 17px;
+    background-color: var(--visit-card-background);
+    //transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+}
+
+.visit-card__switch-theme {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--button-color);
+    color: var(--button-color);
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: var(--visit-card-background);
+}
+
+.visit-card__big-field {
+    height: 595px;
+    width: 747px;
+    left: 380px;
+    border-radius: 30px;
+    background-color: var(--visit-card__big-field-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-column__avatar {
+    width: 180px;
+    margin-top: 23px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    box-shadow: 12px 12px 0 var(--avatar-shadow-background);
+}
+
+.visit-card__my-name {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.visit-card__my-profession {
+    font-size: 20px;
+}
+
+.icon {
+    width: 24px;
+    border-radius: 50%;
+    display: block;
+}
+
+.visit-card__main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.visit-card__name {
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 71px;
+    text-align: center;
+}
+
+.visit-card__profession {
+    font-size: 22px;
+}
+
+.visit-card__main-column {
+    margin-top: 12.5%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
